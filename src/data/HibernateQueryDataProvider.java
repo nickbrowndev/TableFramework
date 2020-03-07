@@ -7,7 +7,7 @@ import table.DataProvider;
 import java.util.Collection;
 import java.util.List;
 
-public class HibernateQueryDataProvider<T> implements DataProvider<Collection<T>, Query>, PagedDataProvider<Collection<T>, Query> {
+public class HibernateQueryDataProvider<T> implements DataProvider<Collection<T>, Query>,  PagedDataProvider<Collection<T>, Query> {
 
     private Collection<T> results;
 

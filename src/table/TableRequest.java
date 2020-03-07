@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import data.Sort;
 
 public class TableRequest<T> implements PaginationConfig {
 
@@ -44,9 +45,4 @@ public class TableRequest<T> implements PaginationConfig {
         return Optional.ofNullable(skip);
     }
 
-    public static class Sort {
-        public enum Direction {ASC, DESC};
-        private String field;
-        public Direction direction;
-    }
 }
